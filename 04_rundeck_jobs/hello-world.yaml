@@ -1,0 +1,25 @@
+- defaultTab: nodes
+  description: ''
+  executionEnabled: true
+  id: 93fbb116-26df-433e-a658-72f069278f4a
+  loglevel: INFO
+  name: hello-world
+  nodeFilterEditable: false
+  nodefilters:
+    dispatch:
+      excludePrecedence: true
+      keepgoing: false
+      rankOrder: ascending
+      successOnEmptyNodeFilter: false
+      threadcount: '1'
+    filter: 'name: gcp_admin_server '
+  nodesSelectedByDefault: true
+  plugins:
+    ExecutionLifecycle: {}
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: echo "hello world"
+    keepgoing: false
+    strategy: node-first
+  uuid: 93fbb116-26df-433e-a658-72f069278f4a
